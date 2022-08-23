@@ -1,0 +1,75 @@
+
+@use 'helper-styles' as *
+@use 'reset-base' as *
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&display=swap')
+
+
+military-symbols
+  @include flexCenter
+  overflow: hidden
+  flex-direction: column
+  background-color: #2c2e35
+  font-family: 'Open Sans'
+  font-weight: 500
+
+  t-container, .container
+    display: flex
+    flex-direction: column
+    padding: 0.2em 0.4em 0.2em 0.2em
+
+  t-row, .row
+    display: flex
+    gap: 1em
+
+  t-heading, .heading
+    display: block
+
+  t-label
+    padding-right: 1rem
+    margin-right: auto
+    white-space: nowrap
+    &::after
+      content: ': '
+  
+  t-data
+    margin-left: auto
+    min-width: 2rem
+    text-align: right
+
+  t-group, .group
+    padding: 0.2rem 0
+    display: flex
+    flex-direction: column
+
+    t-heading, .heading
+        font-size: 1em
+
+  t-container, .container
+    .container, t-container
+      >*:not(t-heading, .heading, button)
+        padding-left: 1em
+        font-size: 0.9em
+
+        
+
+
+  pre-game
+    @include flexCenter
+    flex-direction: column
+    gap: 1rem
+    start-button, continue-button
+      @include button(green)
+
+
+  game-view
+    @include flexCenter
+    position: relative
+    max-width: 100%
+
+    game-background
+      @include flexCenter
+      pointer-events: none
+      img
+        height: 100%
+
