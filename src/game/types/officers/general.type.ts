@@ -1,7 +1,15 @@
 import { Officer } from "../officer.type";
+import { GeneralRankName_S } from "../rank-names.set";
+
+/**
+ * correspond with the echelon
+ */
+
 
 export type GeneralOfficer = Officer & {
+  rankName: GeneralRankName_S
   stars: number
+  
 }
 
 export type GeneralOfArmies = GeneralOfficer & {
@@ -31,28 +39,4 @@ export type MajorGeneral = GeneralOfficer & {
 export type BrigadierGeneral = GeneralOfficer & {
   rankName: 'Brigadier General'
   stars: 1
-}
-
-
-export type Colonel = Officer & {
-  rankName: 'Colonel'
-  stars: 1
-}
-export type LieutenantColonel = Officer & {
-  rankName: 'Lieutenant Colonel'
-}
-export type Major = Officer & {
-  rankName: 'Major'
-}
-export type Brigadier = Officer & {
-  rankName: 'Brigadier'
-}
-export type Captain = Officer & {
-  rankName: 'Captain'
-}
-export type FirstLieutenant = Officer & {
-  rankName: 'First Lieutenant'
-}
-export type SecondLieutenant = Officer & {
-  rankName: 'Second Lieutenant'
 }

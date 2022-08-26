@@ -1,0 +1,18 @@
+Illogical:
+  ☐ units that are part of a bigger formation still have an independant position. How should a sub unit be positioned relative to its parent?
+  ☐ how do fights between huge units go down, if the huge unit loses sub units, does its echelon get demoted?
+  ☐ if 3 sections make a platoon, and a platoon needs a higher ranking officer, then its not like one of the section leaders can lead the platoon, a new leader is required right?
+
+Todo:
+  ☐ make a unit creator in the ui
+  ☐ persist the data in firbase, use firebase to generate ids
+
+
+
+High Level Questions:
+  ☐ how does terrain affect movement, combat, other
+  ☐ other features, diplomacy, wealth, reputation, power
+  ☐ how are units created
+  ☐ how long do things take
+  ☐ how do players play agianst eachother
+  
